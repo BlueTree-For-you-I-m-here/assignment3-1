@@ -1,4 +1,5 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+*.json
+*copy*
+*pics
+.prettierrc
+*.zip
