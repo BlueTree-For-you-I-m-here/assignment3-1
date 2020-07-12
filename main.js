@@ -31,14 +31,12 @@
          const commentTd = document.createElement('td');
          const conditionTd_a = document.createElement('td');
          const conditionTd_b = document.createElement('td');
-         //conditionTd_aに idと classを付与
-         conditionTd_a.id = 'working';
+         //conditionTd_aにclassを付与
          conditionTd_a.className = 'btn';
-
-         //conditionTd_bに idと classを付与
-         conditionTd_b.id = 'remove';
+         
+         //conditionTd_bにclassを付与
          conditionTd_b.className = 'btn';
-
+         
          addTaskTarget.appendChild(tr);
          tr.appendChild(idTd); // 1つめ
          idTd.textContent = tasks[i].id;
@@ -48,8 +46,8 @@
          conditionTd_a.textContent = tasks[i].condition_a;
          tr.appendChild(conditionTd_b); // 4つ目
          conditionTd_b.textContent = tasks[i].condition_b;
+         tasks = [];
       }
-      tasks = [];
    };
 
    //追加ボタンクリック時にaddTask()を走らせる
