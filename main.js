@@ -12,8 +12,8 @@
       let task = {
          id: idNum,
          comment: input.value,
-         condition_a: '作業中',
-         condition_b: '削除',
+         condition_working: '作業中',
+         condition_delete: '削除',
       };
 
       tasks.push(task);
@@ -43,9 +43,9 @@
          tr.appendChild(commentTd); // 2つ目
          commentTd.textContent = tasks[i].comment; // タスク入力値
          tr.appendChild(conditionWorkingTd); // 3つ目
-         conditionWorkingTd.textContent = tasks[i].condition_a;
+         conditionWorkingTd.textContent = tasks[i].condition_working;
          tr.appendChild(conditionDeleteTd); // 4つ目
-         conditionDeleteTd.textContent = tasks[i].condition_b;
+         conditionDeleteTd.textContent = tasks[i].condition_delete;
          tasks = [];
       }
    };
